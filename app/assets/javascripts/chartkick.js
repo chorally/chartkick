@@ -779,7 +779,7 @@
 
             var data = new google.visualization.DataTable();
             data.addColumn({type: "string", id: "Name"});
-            data.addColumn({ type: "string", id: "Activity"});
+            data.addColumn({type: "string", id: "Activity"});
             data.addColumn({type: "date", id: "Start"});
             data.addColumn({type: "date", id: "End"});
             data.addRows(chart.data);
