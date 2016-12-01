@@ -779,10 +779,9 @@
 
             var data = new google.visualization.DataTable();
             data.addColumn({type: "string", id: "Name"});
-            data.addColumn({type: "string", id: "Activity"});
             data.addColumn({type: "date", id: "Start"});
             data.addColumn({type: "date", id: "End"});
-            data.addRows(data);
+            data.addRows(chart.data);
 
             chart.element.style.lineHeight = "normal";
             chart.chart = new google.visualization.Timeline(chart.element);
