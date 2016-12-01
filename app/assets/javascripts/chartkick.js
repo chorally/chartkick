@@ -782,7 +782,7 @@
             data.addColumn({type: "string", id: "Activity"});
             data.addColumn({type: "date", id: "Start"});
             data.addColumn({type: "date", id: "End"});
-            data.addRows(chart.data);
+            data.addRows(data);
 
             chart.element.style.lineHeight = "normal";
             chart.chart = new google.visualization.Timeline(chart.element);
