@@ -479,7 +479,7 @@
             if (call) {
               cb.callback();
               callbacks.splice(i, 1);
-              i;
+              i--;
             }
           }
         };
