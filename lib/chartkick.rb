@@ -19,7 +19,7 @@ module Enumerable
       group_by { |k, a, _v| k[0] }.map do |name, activity, data|
         {name: name, activity: activity, data: data.map { |k, v| [k[1], v] }}
       end
-    if is_a?(Hash) && (key = keys.first) && key.is_a?(Array) && key.size == 2
+    elsif is_a?(Hash) && (key = keys.first) && key.is_a?(Array) && key.size == 2
       group_by { |k, _v| k[0] }.map do |name, data|
         {name: name, data: data.map { |k, v| [k[1], v] }}
       end
